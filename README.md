@@ -1,1 +1,1 @@
-# sctc-diploma
+# SCTC-DIPLOMA
