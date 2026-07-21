@@ -80,13 +80,6 @@
     }
 
     /* Navigation */
-    .submenu{
-    display:none;
-}
-
-.dropdown:hover .submenu{
-    display:block;
-}
 
     nav {
         position: sticky;
@@ -592,6 +585,15 @@
       margin: 5px;
     }
   }
+
+       .submenu{
+    display:none;
+}
+
+.dropdown:hover .submenu{
+    display:block;
+}
+    
 </style>
 </head>
 <body>
@@ -613,7 +615,7 @@
     <a href="Aboutsctc.html"><font size="">About SCTC</font></a>
     <a href="#Facilities" tabindex="1">Facilities</a><br>
         
-    
+    <li class="dropdown">
     <a href="#Academics" tabindex="2">Academics</a>
           <ul class="submenu">
        <li><a href="#">CSE</a></li>
