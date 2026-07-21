@@ -590,26 +590,8 @@
     display:none;
 }
 
-.dropdown:hover .submenu{
-    display:block;
-}
-
-.dropdown{
-    position:relative;
-}
-
-.submenu{
-    display:none;
-    position:absolute;
-    top:100%;      /* Shows below the navigation bar */
-    left:0;
-    background:white;
-    min-width:250px;
-    list-style:none;
-    box-shadow:0 4px 10px rgba(0,0,0,.2);
-}
-
-.dropdown:hover .submenu{
+.dropdown:hover
+    .submenu{
     display:block;
 }
     
@@ -633,8 +615,7 @@
     <nav>
     <a href="Aboutsctc.html"><font size="">About SCTC</font></a>
     <a href="#Facilities" tabindex="1">Facilities</a><br>
-        
-    <nav>
+    
     <ul>
         <li class="dropdown">
     <a href="#Academics" tabindex="2">Academics</a>
@@ -646,7 +627,7 @@
     </ul>
 </li>
     </ul>
-        </nav>
+        
     
     <a href="#Courses" tabindex="3">Courses</a>
      <a href="#Faculty" tabindex="4">Faculty</a>
