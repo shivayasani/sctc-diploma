@@ -597,75 +597,108 @@
 
 
 /* neeeew  */
-    .why-us{
-    width:70%;
+   *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#08141f;
+}
+
+.why-choose{
+    width:90%;
     margin:70px auto;
     display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:30px;
-}
-
-.content{
-    width:30%;
-    background:#000;
-    color:white;
+    gap:40px;
+    background:#0b1723;
     padding:40px;
     border-radius:20px;
+    box-shadow:0 0 25px rgba(56,189,248,.25);
 }
 
-.content h1{
-    font-size:40px;
-    margin-bottom:20px;
-}
+/* LEFT */
 
-.content span{
-    color:#00cfff;
-}
-
-.content p{
-    line-height:20px;
-    margin-bottom:30px;
-}
-
-.content a{
-    text-decoration:none;
-    color:black;
-    background:#00cfff;
-    padding:12px 30px;
-    border-radius:30px;
-    font-weight:bold;
-}
-
-.cards{
-    width:40%;
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-}
-
-.card{
-    background:#0f172a;
-    color:white;
-    padding:30px;
+.left-side{
+    width:38%;
+    background:#000;
+    color:#fff;
+    padding:40px;
     border-radius:20px;
-    border:2px solid #00cfff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.left-side h1{
+    font-size:52px;
+    line-height:65px;
+    margin-bottom:25px;
+}
+
+.left-side span{
+    color:#38BDF8;
+}
+
+.left-side p{
+    font-size:18px;
+    line-height:30px;
+    text-align:justify;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    width:200px;
+    text-align:center;
+    padding:15px;
+    background:#38BDF8;
+    color:#000;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
     transition:.3s;
 }
 
+.btn:hover{
+    background:white;
+}
+
+/* RIGHT */
+
+.right-side{
+    width:62%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#111827;
+    border:2px solid #38BDF8;
+    border-radius:20px;
+    color:white;
+    padding:35px;
+    transition:.4s;
+    text-align:center;
+}
+
 .card:hover{
-    background:#00cfff;
+    background:#38BDF8;
     color:black;
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 }
 
 .card h2{
-    font-size:35px;
-    color:#00cfff;
+    font-size:42px;
+    margin-bottom:15px;
 }
 
-.card:hover h2{
-    color:black;
+.card p{
+    font-size:18px;
+    line-height:28px;
 }
     
 </style>
@@ -746,21 +779,21 @@ Management studies.</font>
     </section>
 
 
-    <section id="" class="fade-section" class="why-us">
+   <section class="why-choose">
 
-    <div class="content">
-        <h1>Build Your <span>Future</span> With Us</h1>
+    <div class="left-side">
+        <h1>Build Your <span>Future</span><br>With Us</h1>
 
         <p>
-            Empowering students with quality education, innovation,
-            practical skills, and career opportunities to become
-            successful professionals.
+            Empowering students through quality education,
+            innovation, practical learning, and excellent
+            placement opportunities to shape future engineers.
         </p>
 
-        <a href="#">Explore More</a>
+        <a href="#" class="btn">Explore More</a>
     </div>
 
-    <div class="cards">
+    <div class="right-side">
 
         <div class="card">
             <h2>18+</h2>
@@ -774,12 +807,22 @@ Management studies.</font>
 
         <div class="card">
             <h2>100+</h2>
-            <p>Faculty Members</p>
+            <p>Experienced Faculty</p>
         </div>
 
         <div class="card">
             <h2>95%</h2>
             <p>Placement Support</p>
+        </div>
+
+        <div class="card">
+            <h2>40+</h2>
+            <p>Recruiting Companies</p>
+        </div>
+
+        <div class="card">
+            <h2>25+</h2>
+            <p>Modern Laboratories</p>
         </div>
 
     </div>
