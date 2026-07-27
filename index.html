@@ -599,44 +599,92 @@
 
 /* neeeew  */
     .academics-section{
-        display:flex;
-        gap:20px;
-        padding:40px;
-        background:#07111f;
-        border-radius:40px;
-        margin-top:50px}
-.academic-left{
-    width:42%
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    padding:60px;
+    background:#07111f;
+    border-radius:25px;
+    margin-top:60px;
 }
-    .academic-left h1{
-        font-size:55px;
-        line-height:65px;
-        color:#fff
-    }
-    .academic-left span{
-        color:#00bfff
-    }
-    .academic-left p{
-        line-height:34px;
-        color:#d5e8ff
-    }
+
+.academic-left{
+    width:42%;
+}
+
+.academic-left h1{
+    font-size:55px;
+    color:white;
+    line-height:65px;
+    margin-bottom:30px;
+}
+
+.academic-left span{
+    color:#00bfff;
+}
+
+.academic-left p{
+    color:#d5e8ff;
+    line-height:35px;
+    font-size:19px;
+    text-align:justify;
+}
+
 .academic-right{
     width:58%;
     display:grid;
-    grid-template-columns:repeat(2,1fr)
+    grid-template-columns:repeat(2,1fr);
 }
+
 .academic-card{
     background:linear-gradient(135deg,#00b7ff,#004b82);
-    min-height:150px;
+    min-height:180px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    border:10px solid rgba(255,255,255,.15)
+    border:1px solid rgba(255,255,255,.15);
+    transition:.4s;
 }
+
 .academic-card:hover{
-    transform:scale(1.04);
-    box-shadow:0 0 25px rgba(0,191,255,.6)
+    transform:scale(1.05);
+    box-shadow:0 0 30px rgba(0,191,255,.6);
+}
+
+.academic-card h2{
+    font-size:42px;
+    color:white;
+    margin-bottom:12px;
+}
+
+.academic-card p{
+    color:white;
+    font-size:20px;
+    text-align:center;
+}
+
+@media(max-width:900px){
+
+.academics-section{
+    flex-direction:column;
+}
+
+.academic-left,
+.academic-right{
+    width:100%;
+}
+
+.academic-right{
+    grid-template-columns:1fr;
+}
+
+.academic-left h1{
+    font-size:38px;
+    line-height:48px;
+}
+
 }
    
 </style>
